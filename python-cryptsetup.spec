@@ -1,5 +1,6 @@
 %define 	module	cryptsetup
 Summary:	Python bindings for cryptsetup
+Summary(pl.UTF-8):	Wiązania Pythona do biblioteki cryptsetup
 Name:		python-%{module}
 Version:	0.1.4
 Release:	1
@@ -23,10 +24,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Python module to ease the manipulation with LUKS devices.
 
+%description -l pl.UTF-8
+Moduł Pythona ułatwiający operacje na urządzeniach LUKS
+
 %prep
 %setup -q
 
 %build
+CFLAGS="%{rpmcflags}" \
 %{__python} setup.py build
 
 %install
