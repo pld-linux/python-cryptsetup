@@ -31,6 +31,7 @@ Moduł Pythona ułatwiający operacje na urządzeniach LUKS
 %setup -q
 
 %build
+CC="%{__cc}" \
 CFLAGS="%{rpmcflags}" \
 %{__python} setup.py build
 
