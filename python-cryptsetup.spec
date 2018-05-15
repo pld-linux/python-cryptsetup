@@ -3,7 +3,7 @@ Summary:	Python bindings for cryptsetup
 Summary(pl.UTF-8):	Wiązania Pythona do biblioteki cryptsetup
 Name:		python-%{module}
 Version:	0.1.4
-Release:	4
+Release:	5
 License:	GPL v2+
 Group:		Libraries/Python
 # To generate source do
